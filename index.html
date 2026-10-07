@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Midway Barbershop — Complimentary mockup</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: { ink:"#0f172a", teal:"#0d9488", cream:"#f8fafc", gold:"#c9a227" },
+    fontFamily: { sans:["Inter","system-ui","sans-serif"] }
+  }}
+}
+</script>
+<style>
+  html { scroll-behavior:smooth; }
+  .overlay { background: linear-gradient(180deg, rgba(15,23,42,.55), rgba(15,23,42,.78)); }
+  dialog::backdrop { background: rgba(15,23,42,.55); }
+</style>
+</head>
+<body class="bg-cream text-ink font-sans antialiased pb-20">
+<div class="bg-amber-50 text-amber-950 text-center text-xs sm:text-sm px-4 py-2 border-b border-amber-200">
+  Complimentary mockup by Al-Falah Marketing — nothing is live under your name. / Maquette offerte — rien n’est en ligne sous votre nom.
+</div>
+<header class="sticky top-0 z-40 bg-white/85 backdrop-blur border-b border-slate-200">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+    <a href="#top" class="font-extrabold tracking-tight text-lg">Midway</a>
+    <nav class="hidden md:flex items-center gap-5 text-sm font-medium text-slate-600">
+      <a href="#menu" data-en="Menu" data-fr="Carte">Menu</a>
+      <a href="#gallery" data-en="Gallery" data-fr="Galerie">Gallery</a>
+      <a href="#visit" data-en="Visit" data-fr="Visite">Visit</a>
+      <a href="#contact" data-en="Contact" data-fr="Contact">Contact</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <button id="lang" class="text-xs font-semibold border border-slate-300 rounded-full px-3 py-1">FR</button>
+      <a href="https://wa.me/13017251979" class="bg-teal text-white text-sm font-semibold rounded-full px-4 py-2" data-en="WhatsApp" data-fr="WhatsApp">WhatsApp</a>
+    </div>
+  </div>
+</header>
+<section id="top" class="relative min-h-[78vh] flex items-end">
+  <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80" alt="Barber chair" class="absolute inset-0 w-full h-full object-cover" />
+  <div class="overlay absolute inset-0"></div>
+  <div class="relative z-10 max-w-6xl mx-auto px-4 pb-12 pt-24 text-white">
+    <p class="text-gold font-semibold tracking-widest text-xs uppercase mb-3">Laurel, Maryland</p>
+    <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight max-w-3xl" data-en="A neighborhood chair on Washington Blvd." data-fr="Un fauteuil de quartier sur Washington Blvd.">A neighborhood chair on Washington Blvd.</h1>
+    <p class="mt-4 max-w-xl text-slate-100 text-lg" data-en="Fades, line-ups, and a straight answer. Walk in or call ahead." data-fr="Dégradés, contours, et un vrai accueil. Sans rendez-vous ou sur appel.">Fades, line-ups, and a straight answer. Walk in or call ahead.</p>
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a href="https://wa.me/13017251979" class="bg-teal hover:bg-teal-700 text-white font-semibold rounded-xl px-5 py-3" data-en="Message on WhatsApp" data-fr="Écrire sur WhatsApp">Message on WhatsApp</a>
+      <a href="tel:+13017251979" class="bg-white/10 border border-white/40 text-white font-semibold rounded-xl px-5 py-3" data-en="Call (301) 725-1979" data-fr="Appeler (301) 725-1979">Call (301) 725-1979</a>
+    </div>
+  </div>
+</section>
+<div class="bg-ink text-white">
+  <div class="max-w-6xl mx-auto px-4 py-3 grid sm:grid-cols-3 gap-2 text-xs sm:text-sm">
+    <p><span class="text-gold">Laurel</span> · USD · +1 240 280 6137</p>
+    <p><span class="text-gold">Coyah</span> · GNF · Orange Money · +224 611 351 302</p>
+    <p><span class="text-gold">Freetown</span> · SLE · +232 via studio line</p>
+  </div>
+</div>
+<main class="max-w-6xl mx-auto px-4">
+  <section id="menu" class="py-14">
+    <h2 class="text-3xl font-extrabold" data-en="The chair" data-fr="Le fauteuil">The chair</h2>
+    <p class="text-slate-600 mt-2 max-w-2xl" data-en="Prices shown are starting points for the mockup. Confirm today’s menu on WhatsApp." data-fr="Les prix sont indicatifs pour la maquette. Confirmez la carte du jour sur WhatsApp.">Prices shown are starting points for the mockup. Confirm today’s menu on WhatsApp.</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
+      <button data-card data-title="Haircut" data-body="Classic and modern cuts. Price confirmed in the chair." data-img="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80" class="text-left bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-md">
+          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80" alt="Haircut" class="h-40 w-full object-cover" />
+          <div class="p-4"><p class="font-bold">Haircut</p><p class="text-sm text-slate-600 mt-1">Classic and modern cuts. Price confirmed in the chair.</p><p class="text-teal font-semibold text-sm mt-2">Ask for today’s rate</p></div>
+        </button>\n<button data-card data-title="Fade & line-up" data-body="Clean blend, sharp edge." data-img="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" class="text-left bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-md">
+          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Fade & line-up" class="h-40 w-full object-cover" />
+          <div class="p-4"><p class="font-bold">Fade & line-up</p><p class="text-sm text-slate-600 mt-1">Clean blend, sharp edge.</p><p class="text-teal font-semibold text-sm mt-2">Ask for today’s rate</p></div>
+        </button>\n<button data-card data-title="Beard shape" data-body="Trim and line, not a rush job." data-img="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" class="text-left bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-md">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Beard shape" class="h-40 w-full object-cover" />
+          <div class="p-4"><p class="font-bold">Beard shape</p><p class="text-sm text-slate-600 mt-1">Trim and line, not a rush job.</p><p class="text-teal font-semibold text-sm mt-2">Ask for today’s rate</p></div>
+        </button>
+    </div>
+  </section>
+  <section id="gallery" class="py-6">
+    <h2 class="text-3xl font-extrabold" data-en="Ambiance" data-fr="Ambiance">Ambiance</h2>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-6">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80" alt="Ambiance" class="h-36 sm:h-44 w-full object-cover rounded-2xl" />\n<img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1200&q=80" alt="Ambiance" class="h-36 sm:h-44 w-full object-cover rounded-2xl" />\n<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1200&q=80" alt="Ambiance" class="h-36 sm:h-44 w-full object-cover rounded-2xl" />\n<img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1200&q=80" alt="Ambiance" class="h-36 sm:h-44 w-full object-cover rounded-2xl" />
+    </div>
+    <p class="text-xs text-slate-500 mt-3">Photos are curated placeholders until the owner shares real shots. / Photos d’ambiance en attendant vos clichés.</p>
+  </section>
+  <section class="py-12">
+    <div class="rounded-2xl bg-white shadow-sm border border-slate-200 p-6 sm:p-8">
+      <p class="text-xs uppercase tracking-widest text-teal font-semibold">Al-Falah Marketing</p>
+      <h2 class="text-2xl font-extrabold mt-1" data-en="What a simple page already does" data-fr="Ce qu’une page simple change déjà">What a simple page already does</h2>
+      <div class="grid sm:grid-cols-3 gap-4 mt-6 text-sm">
+        <div class="rounded-xl bg-cream p-4"><p class="text-2xl font-extrabold text-teal">Acile Coffee</p><p class="mt-1 text-slate-600" data-en="Clear hours and WhatsApp orders, fewer “are you open?” calls." data-fr="Horaires clairs et commandes WhatsApp, moins d’appels « vous êtes ouverts ? ».">Clear hours and WhatsApp orders, fewer “are you open?” calls.</p></div>
+        <div class="rounded-xl bg-cream p-4"><p class="text-2xl font-extrabold text-teal">Shawarma Sam</p><p class="mt-1 text-slate-600" data-en="Menu photos that travel better than a Facebook album." data-fr="Photos de carte qui voyagent mieux qu’un album Facebook.">Menu photos that travel better than a Facebook album.</p></div>
+        <div class="rounded-xl bg-cream p-4"><p class="text-2xl font-extrabold text-teal">1 page</p><p class="mt-1 text-slate-600" data-en="Mobile-first, bilingual, ready to host under your own name." data-fr="Mobile d’abord, bilingue, prête à héberger sous votre nom.">Mobile-first, bilingual, ready to host under your own name.</p></div>
+      </div>
+    </div>
+  </section>
+  <section id="visit" class="py-4 grid lg:grid-cols-2 gap-6">
+    <div class="rounded-2xl bg-ink text-white p-6">
+      <h2 class="text-2xl font-extrabold" data-en="Visit" data-fr="Nous trouver">Visit</h2>
+      <p class="mt-3 text-slate-200">10051 Washington Blvd., Laurel, MD (Facebook page)</p>
+      <p class="mt-2">Call to confirm today’s hours</p>
+      <p class="mt-2">(301) 725-1979</p>
+      <a href="https://wa.me/13017251979" class="inline-block mt-5 bg-teal rounded-xl px-4 py-2 font-semibold" data-en="Ask for today’s prices" data-fr="Demander les prix du jour">Ask for today’s prices</a>
+    </div>
+    <form id="lead" class="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+      <h2 class="text-2xl font-extrabold" data-en="Request a table or order" data-fr="Réserver ou commander">Request a table or order</h2>
+      <label class="block text-sm mt-4" data-en="Name" data-fr="Nom">Name</label>
+      <input id="nm" class="mt-1 w-full border rounded-xl px-3 py-2" />
+      <label class="block text-sm mt-3" data-en="What do you need?" data-fr="Votre besoin">What do you need?</label>
+      <textarea id="msg" class="mt-1 w-full border rounded-xl px-3 py-2" rows="3"></textarea>
+      <button class="mt-4 bg-ink text-white rounded-xl px-4 py-2 font-semibold" type="submit" data-en="Open WhatsApp" data-fr="Ouvrir WhatsApp">Open WhatsApp</button>
+    </form>
+  </section>
+  <section id="contact" class="py-10 text-sm text-slate-600">
+    <h2 class="text-xl font-bold text-ink" data-en="Privacy & terms" data-fr="Confidentialité et conditions">Privacy & terms</h2>
+    <p class="mt-2" id="privacy" data-en="This page is a review mockup. It does not collect or store form data. Messages open in WhatsApp." data-fr="Cette page est une maquette. Elle ne stocke aucune donnée. Le formulaire ouvre WhatsApp.">This page is a review mockup. It does not collect or store form data. Messages open in WhatsApp.</p>
+    <p class="mt-2" id="terms" data-en="Not an official site of Midway Barbershop. Prepared by Al-Falah Marketing for review only." data-fr="Ce n’est pas le site officiel de Midway Barbershop. Préparé par Al-Falah Marketing pour relecture uniquement.">Not an official site of Midway Barbershop. Prepared by Al-Falah Marketing for review only.</p>
+  </section>
+</main>
+<footer class="bg-ink text-slate-300 text-sm">
+  <div class="max-w-6xl mx-auto px-4 py-8 grid sm:grid-cols-2 gap-4">
+    <div>
+      <p class="text-white font-semibold">Al-Falah Marketing</p>
+      <p>8468 Winding Trail, Laurel, MD 20724</p>
+      <p>info@al-falahmarketing.com · +1 240 280 6137 · +224 611 351 302</p>
+      <p><a class="underline" href="https://al-falahmarketing.com">al-falahmarketing.com</a></p>
+    </div>
+    <p>Mockup credit: Al-Falah Marketing, founded 2023. Laurel · Coyah · Freetown. Nothing here is live under the business name.</p>
+  </div>
+</footer>
+<div class="fixed bottom-0 inset-x-0 z-40 bg-white border-t border-slate-200 grid grid-cols-3 md:hidden">
+  <a href="tel:+13017251979" class="text-center py-3 text-sm font-semibold" data-en="Call" data-fr="Appeler">Call</a>
+  <a href="https://wa.me/13017251979" class="text-center py-3 text-sm font-semibold text-teal" data-en="WhatsApp" data-fr="WhatsApp">WhatsApp</a>
+  <a href="#menu" class="text-center py-3 text-sm font-semibold" data-en="Menu" data-fr="Carte">Menu</a>
+</div>
+<dialog id="modal" class="rounded-2xl p-0 max-w-md w-[92%]">
+  <div class="p-5">
+    <img id="mimg" class="w-full h-40 object-cover rounded-xl" alt="" />
+    <h3 id="mtitle" class="text-xl font-bold mt-3"></h3>
+    <p id="mbody" class="text-slate-600 mt-2 text-sm"></p>
+    <button id="mclose" class="mt-4 text-sm font-semibold">Close</button>
+  </div>
+</dialog>
+<script>
+const dict = {};
+document.querySelectorAll("[data-en]").forEach(el => { dict[el] = true; });
+let fr = false;
+document.getElementById("lang").onclick = () => {
+  fr = !fr;
+  document.getElementById("lang").textContent = fr ? "EN" : "FR";
+  document.querySelectorAll("[data-en]").forEach(el => { el.textContent = fr ? el.dataset.fr : el.dataset.en; });
+};
+document.querySelectorAll("[data-card]").forEach(btn => {
+  btn.onclick = () => {
+    const d = document.getElementById("modal");
+    document.getElementById("mtitle").textContent = btn.dataset.title;
+    document.getElementById("mbody").textContent = btn.dataset.body;
+    document.getElementById("mimg").src = btn.dataset.img;
+    d.showModal();
+  };
+});
+document.getElementById("mclose").onclick = () => document.getElementById("modal").close();
+document.getElementById("lead").onsubmit = (e) => {
+  e.preventDefault();
+  const t = encodeURIComponent((document.getElementById("nm").value || "Bonjour") + " — " + (document.getElementById("msg").value || "Je souhaite commander / réserver."));
+  window.open("https://wa.me/13017251979?text=" + t, "_blank");
+};
+</script>
+</body>
+</html>
